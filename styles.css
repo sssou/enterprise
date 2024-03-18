@@ -1,0 +1,136 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F0ECE5;
+}
+
+/* nav bar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #252627;
+    padding: 15px 2.5%;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #D5D8D5;
+}
+
+.nav-brand {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.nav-item {
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.nav-item a:visited {
+    color: #252627;
+}
+
+h1 {
+    padding: 0 2.5%;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #252627;
+    padding: 15px 2.5%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: #D5D8D5;
+}
+
+
+/* grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+    gap: 10px; /* Space between grid items */
+    padding: 0 2.5%;
+}
+
+.image-item img {
+    width: 100%; /* Makes image fully responsive within its container */
+    height: 100%; /* Maintain aspect ratio */
+    display: block; /* Remove bottom space/margin under the image */
+}
+
+.image-item.large {
+    grid-column: span 2; /* Make these items larger */
+}
+
+/* hover title */
+.image-item {
+    position: relative;
+    display: inline-block; /* Or flex, depending on your layout */
+}
+
+.image-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5); /* Semi-transparent background */
+    color: #fff; /* Text color */
+    visibility: hidden; /* Hidden by default */
+    opacity: 0;
+    font-family: monospace;
+    font-size: 28px;
+    font-weight: bold;
+    transition: visibility 0s, opacity 0.3s linear; /* Smooth transition */
+}
+
+.image-item:hover .image-title {
+    visibility: hidden;
+    opacity: 1;
+}
+
+/* pages */
+
+.navigation {
+    display: flex;
+    justify-content: space-between; /* Positions one item at the start and the other at the end */
+    align-items: center; /* Vertically centers the items if they have different heights */
+    margin-top: 0px; /* Adjust as needed */
+    margin-bottom: 20px;
+    padding: 0 2.5%; /* Add some padding on the sides */
+}
+
+.arrow {
+    display: inline-block;
+    padding: 8px 15px; /* Adjust padding as needed */
+    background-color: #F0ECE5; /* Background color */
+    color: #333; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: bold; /* Make text bold */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background color change on hover */
+}
+
+.arrow:hover {
+    background-color: #ddd; /* Darker background on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .image-grid {
+        grid-template-columns: 1fr; /* Only one column on small screens */
+    }
+    .image-item.large {
+        grid-column: span 1; /* No longer spans more than 1 unit */
+    }
+}

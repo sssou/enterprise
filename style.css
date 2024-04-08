@@ -31,10 +31,6 @@ nav {
     text-decoration: underline;
 }
 
-.nav-item a:visited {
-    color: #1a3edd;
-}
-
 /* footer */
 
 footer {
@@ -131,11 +127,21 @@ nav.dark-mode, footer.dark-mode {
     background-color: var(--bar-color-dark);
   }
 
+  .light-mode a,
+  .light-mode a:visited {
+    color: var(--text-color-light); /* Dark color for light background */
+  }
+  
+  /* Dark Mode */
+  .dark-mode a,
+  .dark-mode a:visited {
+    color: var(--text-color-dark); /* Light color for dark background */
+  }
 /* The box around the slider */
 .switch {
     position: relative;
     display: inline-block;
-    width: 150px;
+    width: 145px;
     height: 34px;
   }
 /* the slider */
@@ -146,7 +152,7 @@ nav.dark-mode, footer.dark-mode {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #DD1C1A;
     transition: .4s;
     border-radius: 30px;
   }
@@ -164,13 +170,13 @@ nav.dark-mode, footer.dark-mode {
   }
   
 input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #ccc;
   }
   
 input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #ccc;
   }
   
 input:checked + .slider:before {
-    transform: translateX(115px);
+    transform: translateX(110px);
   }

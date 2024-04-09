@@ -95,6 +95,12 @@ footer {
     .image-grid {
         grid-template-columns: 1fr; /* Only one column on small screens */
     }
+
+    nav {
+        flex-direction: column; /* Stack children vertically */
+        justify-content: center; /* Center children horizontally */
+        text-align: center; /* Center the text for inline or inline-block elements */
+    }
 }
 
 /* dark mode experiment */

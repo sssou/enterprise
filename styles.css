@@ -146,6 +146,11 @@ footer {
     .image-item.large {
         grid-column: span 1; /* No longer spans more than 1 unit */
     }
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 /* dark mode experiment */

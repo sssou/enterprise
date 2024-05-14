@@ -87,4 +87,17 @@ document.addEventListener('DOMContentLoaded', function() {
       console.error('Toggle theme button not found.');
     }
   });
-  
+
+  document.getElementById('toggleImages').addEventListener('click', function() {
+    // Select all images with the class 'gallery-image'
+    var images = document.querySelectorAll('.flip');
+
+    // Loop through each image and update the src attribute based on its current state
+    images.forEach(image => {
+        if (image.src.includes("main.png")) {
+            image.src = image.src.replace("main.png", "back.png");
+        } else if (image.src.includes("back.png")) {
+            image.src = image.src.replace("back.png", "main.png");
+        }
+    });
+});

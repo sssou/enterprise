@@ -37,17 +37,40 @@ body {
 .overlay.hidden {
   transform: translateY(-100%);
 }
-/* 
-  Masonry-style: 
-  Remove display:grid. Use multi-column layout.
-*/
-.image-grid {
-  /* Remove old grid styles:
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-  */
 
+/* Scroll Down Icon */
+.scroll-down-icon {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20vh; /* Adjust size as needed */
+  color: white; /* Matches the overlay text color */
+  animation: bounce 1.5s infinite; /* Adds a bouncing effect */
+  cursor: pointer; /* Makes it look clickable */
+}
+
+/* Bouncing animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-30px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-15px);
+  }
+}
+
+/* Hide the icon when the overlay is hidden */
+.overlay.hidden .scroll-down-icon {
+  display: none;
+}
+
+/* image container */
+
+.image-grid {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(11, 1fr);

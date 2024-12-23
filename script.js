@@ -47,21 +47,30 @@
 // overlay
 
 const overlay = document.querySelector('.overlay'); // Select the overlay
+const scrollDownIcon = document.querySelector('.scroll-down-icon'); // Select the scroll icon
 
-if (overlay) { // Ensure the overlay exists
+if (overlay && scrollDownIcon) {
   window.addEventListener('scroll', () => {
     const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
     if (currentScrollPosition === 0) {
-      // User is at the very top
+      // Show overlay and icon when at the top
       overlay.classList.add('visible');
       overlay.classList.remove('hidden');
+      scrollDownIcon.style.display = 'block';
     } else {
-      // User is not at the top
+      // Hide overlay and icon when scrolling down
       overlay.classList.add('hidden');
       overlay.classList.remove('visible');
+      scrollDownIcon.style.display = 'none';
     }
   });
 } else {
-  console.error('Overlay element not found!');
+  console.error('Overlay or Scroll Down Icon not found!');
 }
+scrollDownIcon.addEventListener('click', () => {
+  window.scrollTo({
+    top: window.innerHeight, // Scrolls one viewport height down
+    behavior: 'smooth' // Smooth scrolling
+  });
+});

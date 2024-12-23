@@ -102,11 +102,11 @@ footer {
 }
 
 .golf4x4 img {
-  object-position: 50% 75%;
+  object-position: 50% 65%;
 }
 
 .rx7kyza img {
-  object-position: bottom;
+  object-position: 50% 87.5%;
 }
 
 .vanztrackhawk img {
@@ -114,7 +114,15 @@ footer {
 }
 
 .rs6 img {
-  object-position: bottom;
+  object-position: 50% 75%;
+}
+
+.gt3mantle img {
+  object-position: 50% 65%;
+}
+
+.puroswb img {
+  object-position: 50% 60%;
 }
 
 /* Hover title */

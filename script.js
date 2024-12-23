@@ -29,7 +29,7 @@
       console.error('Toggle theme button not found.');
     }
   });
-
+/*
   document.getElementById('toggleImages').addEventListener('click', function() {
     // Select all images with the class 'gallery-image'
     var images = document.querySelectorAll('.flip');
@@ -43,3 +43,30 @@
         }
     });
 });
+*/
+// overlay
+
+let lastScrollPosition = 0; // Keeps track of the last scroll position
+const overlay = document.querySelector('.overlay'); // Select the overlay
+
+if (overlay) { // Ensure the overlay exists
+  window.addEventListener('scroll', () => {
+    const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Check if user scrolled down or up
+    if (currentScrollPosition > lastScrollPosition) {
+      // Scrolling down
+      overlay.classList.add('hidden');
+      overlay.classList.remove('visible');
+    } else {
+      // Scrolling up
+      overlay.classList.add('visible');
+      overlay.classList.remove('hidden');
+    }
+
+    // Update last scroll position
+    lastScrollPosition = currentScrollPosition <= 0 ? 0 : currentScrollPosition; // Avoid negative values
+  });
+} else {
+  console.error('Overlay element not found!'); // Log an error if the overlay is missing
+}

@@ -181,6 +181,9 @@ body {
   .vanztrackhawk { grid-area: 1 / 8 / 3 / 9; }
   .nfs { grid-area: 29 / 7 / 31 / 9; }
 
+  .q5hycade img {
+    object-position: 50% 70%;
+  }
 }
 
 /* dark mode experiment */

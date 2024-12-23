@@ -178,10 +178,14 @@ body {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(55, 1fr);
-    grid-column-gap: 1vh;
-    grid-row-gap: 1vh;
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vw;
     height: 100vh;
     padding: 2vh 1vw 2vh 1vw ;
+  }
+
+  .image-item img {
+    border: 1px solid #000;
   }
   
   .gt3mantle { grid-area: 1 / 1 / 5 / 5; }

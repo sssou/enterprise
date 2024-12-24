@@ -46,31 +46,66 @@
 */
 // overlay
 
-const overlay = document.querySelector('.overlay'); // Select the overlay
-const scrollDownIcon = document.querySelector('.scroll-down-icon'); // Select the scroll icon
+document.addEventListener('DOMContentLoaded', () => {
+  const overlay = document.querySelector('.overlay'); // Select the overlay
+  const loadingPercentage = document.querySelector('.loading-percentage'); // Loading percentage text
+  const loadingContainer = document.querySelector('.loading-container'); // Loading container
+  const scrollDownIcon = document.querySelector('.scroll-down-icon'); // Scroll down icon, if exists
+  let loadingComplete = false; // Track whether loading is complete
+  let lastScrollPosition = 0;
 
-if (overlay && scrollDownIcon) {
+  // Simulate loading progress
+  let progress = 0;
+  const interval = setInterval(() => {
+    progress += 5; // Increment progress
+    loadingPercentage.textContent = `${progress}%`;
+
+    // Adjust overlay opacity during loading
+    if (overlay) {
+      const opacity = 0.9 - (progress / 200); // Reduce opacity as loading progresses
+      overlay.style.background = `rgba(0, 0, 0, ${Math.max(opacity, 0.5)})`; // Min opacity 0.5
+    }
+
+    // Check if loading is complete
+    if (progress >= 100) {
+      clearInterval(interval);
+      loadingComplete = true;
+
+      // Remove loading indicator
+      loadingContainer.style.opacity = '0';
+      loadingContainer.style.transition = 'opacity 0.5s ease';
+      setTimeout(() => {
+        loadingContainer.style.display = 'none';
+      }, 500); // Remove from DOM after transition
+    }
+  }, 100);
+
+  // Scroll functionality
   window.addEventListener('scroll', () => {
+    if (!loadingComplete) return; // Do nothing if loading is not complete
+
     const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
     if (currentScrollPosition === 0) {
-      // Show overlay and icon when at the top
+      // Show overlay when at the very top
       overlay.classList.add('visible');
       overlay.classList.remove('hidden');
-      scrollDownIcon.style.display = 'block';
     } else {
-      // Hide overlay and icon when scrolling down
+      // Hide overlay on scroll
       overlay.classList.add('hidden');
       overlay.classList.remove('visible');
-      scrollDownIcon.style.display = 'none';
     }
+
+    lastScrollPosition = currentScrollPosition <= 0 ? 0 : currentScrollPosition; // Avoid negative values
   });
-} else {
-  console.error('Overlay or Scroll Down Icon not found!');
-}
-scrollDownIcon.addEventListener('click', () => {
-  window.scrollTo({
-    top: window.innerHeight, // Scrolls one viewport height down
-    behavior: 'smooth' // Smooth scrolling
-  });
+
+  // Scroll down icon click functionality
+  if (scrollDownIcon) {
+    scrollDownIcon.addEventListener('click', () => {
+      window.scrollTo({
+        top: window.innerHeight, // Scrolls one viewport height down
+        behavior: 'smooth' // Smooth scrolling
+      });
+    });
+  }
 });

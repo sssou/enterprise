@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Adjust overlay opacity during loading
     if (overlay) {
-      const opacity = 0.9 - (progress / 200); // Reduce opacity as loading progresses
+      const opacity = 0.99 - (progress / 200); // Reduce opacity as loading progresses
       overlay.style.background = `rgba(0, 0, 0, ${Math.max(opacity, 0.5)})`; // Min opacity 0.5
     }
 
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Remove loading indicator
       loadingContainer.style.opacity = '0';
-      loadingContainer.style.transition = 'opacity 0.5s ease';
+      loadingContainer.style.transition = 'opacity 1s ease';
       setTimeout(() => {
         loadingContainer.style.display = 'none';
       }, 500); // Remove from DOM after transition

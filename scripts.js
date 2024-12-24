@@ -56,16 +56,16 @@ const itemData = {
     phawk: {
         title: "2:2 Jeep Trackhawk PriorDesign",
         prev: { href: "car.html?item=evil", text: "1:1 Bugatti Tourbillon Venuum" },
-        next: { href: "car.html?item=rs6", text: "1:1 Big Drippa Bludclart Magnum Sipper" }
+        next: { href: "car.html?item=rs6", text: "1:1 Big Drippa Bloodclaat Magnum Sipper" }
     },
     rs6: {
-        title: "1:1 Big Drippa Bludclart Magnum Sipper",
+        title: "1:1 Big Drippa Bloodclaat Magnum Sipper",
         prev: { href: "car.html?item=phawk", text: "2:2 Jeep Trackhawk PriorDesign" },
         next: { href: "evo911.html", text: "2:2 Mansory Porsche 911 P9LM Evo" }
     },
     evo911: {
         title: "2:2 Mansory Porsche 911 P9LM Evo",
-        prev: { href: "car.html?item=rs6", text: "1:1 Big Drippa Bludclart Magnum Sipper" },
+        prev: { href: "car.html?item=rs6", text: "1:1 Big Drippa Bloodclaat Magnum Sipper" },
         next: { href: "widekit911b.html", text: "1:2 Porsche Brabus Rocket 900R" }
     },
     widekit911b: {

@@ -298,16 +298,22 @@ nav.dark-mode, footer.dark-mode {
   transition: .4s;
   border-radius: 30px;
 }
+/* The white toggle (knob) */
 .switch .slider:before {
   position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  transition: .4s;
-  border-radius: 50%;
+  content: "🌘"; /* Unicode for moon symbol */
+  font-size: 1rem; /* Adjust size as needed */
+  color: #fff; /* Moon color */
+  height: 26px; /* Knob size */
+  width: 26px; /* Knob size */
+  left: 4px; /* Initial position */
+  bottom: 4px; /* Center within the slider */
+  background-color: white; /* Knob background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* Rounded knob */
+  transition: 0.4s;
 }
 input:checked + .slider {
   background-color: #ccc;

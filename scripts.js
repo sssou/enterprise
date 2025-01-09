@@ -86,10 +86,10 @@ const itemData = {
     s63w223mansory: {
         title: "2:2 Mansory Mercedes S63 AMG",
         prev: { href: "car.html?item=cayrhc", text: "2:2 Porsche Cayenne 4x4" },
-        next: { href: "car.html?item=q5hycade", text: "1:2 Audi Q5 Sportback Hycade" }
+        next: { href: "car.html?item=zzz", text: "McLaren 765LT ZZZ" }
     },
-    q5hycade: {
-        title: "Audi Q5 Sportback Hycade",
+    zzz: {
+        title: "McLaren 765LT ZZZ",
         prev: { href: "car.html?item=s63w223mansory", text: "2:2 Mansory Mercedes S63 AMG" },
         next: { href: "index.html", text: "Garage" }
     }

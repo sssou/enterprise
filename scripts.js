@@ -36,16 +36,16 @@ const itemData = {
     saskia: {
         title: "1:1 Pagani Huayra Codalunga",
         prev: { href: "w223mansory.html", text: "1:2 Mansory Mercedes S500" },
-        next: { href: "car.html?item=rx7kyza", text: "1:1 Khyzl Saleem RX-7" }
+        next: { href: "car.html?item=rx7kyza", text: "1:1 Ferrari 812 Competizione Venuum" }
     },
     rx7kyza: {
-        title: "1:1 Khyzl Saleem RX-7",
+        title: "1:1 Ferrari 812 Competizione Venuum",
         prev: { href: "car.html?item=saskia", text: "1:1 Pagani Huayra Codalunga" },
         next: { href: "car.html?item=kcsq8", text: "2:2 Audi SQ8 Sportback KC" }
     },
     kcsq8: {
         title: "2:2 Audi SQ8 Sportback KC",
-        prev: { href: "car.html?item=rx7kyza", text: "1:1 Khyzl Saleem RX-7" },
+        prev: { href: "car.html?item=rx7kyza", text: "1:1 Ferrari 812 Competizione" },
         next: { href: "car.html?item=evil", text: "1:1 Bugatti Tourbillon Venuum" }
     },
     evil: {

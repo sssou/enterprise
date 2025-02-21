@@ -115,8 +115,8 @@ body {
 
 .cayrhc { grid-area: 1 / 1 / 3 / 3; }
 .mansm8 { grid-area: 1 / 3 / 4 / 6; }
-.sequoia4x4 { grid-area: 3 / 1 / 5 / 3; }
-.rx7kyza { grid-area: 4 / 3 / 7 / 7; }
+.kcsq8 { grid-area: 3 / 1 / 5 / 3; }
+.sequoia4x4 { grid-area: 4 / 3 / 7 / 7; }
 .golf4x4 { grid-area: 1 / 6 / 3 / 8; }
 .puroswb { grid-area: 1 / 9 / 3 / 11; }
 .zzz { grid-area: 8 / 7 / 12 / 11; }
@@ -128,7 +128,7 @@ body {
 .s63w223mansory { grid-area: 10 / 5 / 12 / 7; }
 .evo911 { grid-area: 6 / 7 / 8 / 9; }
 .widekit911b { grid-area: 6 / 9 / 8 / 11; }
-.kcsq8 { grid-area: 3 / 7 / 6 / 10; }
+.rx7kyza { grid-area: 3 / 7 / 6 / 10; }
 .evil { grid-area: 3 / 10 / 6 / 11; }
 .vanztrackhawk { grid-area: 1 / 8 / 3 / 9; }
 .nfs { grid-area: 3 / 6 / 4 / 7; }
@@ -154,8 +154,8 @@ body {
   object-position: 50% 65%;
 }
 
-.rx7kyza img {
-  object-position: 50% 87.5%;
+.sequoia4x4 img {
+  object-position: 50% 37.5%;
 }
 
 .vanztrackhawk img {

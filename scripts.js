@@ -14,7 +14,7 @@ const itemData = {
         next: { href: "car.html?item=golf4x4", text: "1:2 Volkswagen Golf R 4x4" }
     },
     golf4x4: {
-        title: "1:2 Volkswagen Golf R 4x4",
+        title: "1:1 Volkswagen Golf R 4x4",
         prev: { href: "car.html?item=mansm8", text: "1:1 BMW M8 Mansaug" },
         next: { href: "car.html?item=vanztrackhawk", text: "3:3 Jeep Trackhawk Slammed" }
     },
@@ -24,7 +24,7 @@ const itemData = {
         next: { href: "car.html?item=puroswb", text: "1:2 Ferrari Purosangue Pogea Racing Edition" }
     },
     puroswb: {
-        title: "1:2 Ferrari Purosangue Pogea Racing Edition",
+        title: "1:1 Ferrari Purosangue Pogea Racing Edition",
         prev: { href: "car.html?item=vanztrackhawk", text: "3:3 Jeep Trackhawk Slammed" },
         next: { href: "w223mansory.html", text: "1:2 Mansory Mercedes S500" }
     },
@@ -33,8 +33,8 @@ const itemData = {
         prev: { href: "car.html?item=puroswb", text: "1:2 Ferrari Purosangue Pogea Racing Edition" },
         next: { href: "car.html?item=saskia", text: "1:1 Pagani Huayra Codalunga" }
     },
-    saskia: {
-        title: "1:1 Pagani Huayra Codalunga",
+    r8yeti: {
+        title: "1:1 Audi R8 Yeti",
         prev: { href: "w223mansory.html", text: "1:2 Mansory Mercedes S500" },
         next: { href: "car.html?item=rx7kyza", text: "1:1 Ferrari 812 Competizione Venuum" }
     },
@@ -44,7 +44,7 @@ const itemData = {
         next: { href: "car.html?item=kcsq8", text: "2:2 Audi SQ8 Sportback KC" }
     },
     kcsq8: {
-        title: "2:2 Audi SQ8 Sportback KC",
+        title: "2:2 Audi SQ8 4x4",
         prev: { href: "car.html?item=rx7kyza", text: "1:1 Ferrari 812 Competizione" },
         next: { href: "car.html?item=evil", text: "1:1 Bugatti Tourbillon Venuum" }
     },
@@ -73,13 +73,13 @@ const itemData = {
         prev: { href: "evo911.html", text: "2:2 Mansory Porsche 911 P9LM Evo" },
         next: { href: "car.html?item=sequoia4x4", text: "4:4 Toyota Sequoia 4x4" }
     },
-    sequoia4x4: {
-        title: "4:4 Toyota Sequoia 4x4",
+    z40: {
+        title: "1:1 Zlayworks Z40",
         prev: { href: "widekit911b.html", text: "1:2 Porsche Brabus Rocket 900R" },
         next: { href: "car.html?item=cayrhc", text: "2:2 Porsche Cayenne 4x4" }
     },
     cayrhc: {
-        title: "Porsche Cayenne 4x4",
+        title: "1:2 Porsche Cayenne 4x4",
         prev: { href: "car.html?item=sequoia4x4", text: "4:4 Toyota Sequoia 4x4" },
         next: { href: "car.html?item=s63w223mansory", text: "2:2 Mansory Mercedes S63 AMG" }
     },
@@ -89,7 +89,7 @@ const itemData = {
         next: { href: "car.html?item=zzz", text: "McLaren 765LT ZZZ" }
     },
     zzz: {
-        title: "McLaren 765LT ZZZ",
+        title: "1:1 McLaren 765LT ZZZ",
         prev: { href: "car.html?item=s63w223mansory", text: "2:2 Mansory Mercedes S63 AMG" },
         next: { href: "index.html", text: "Garage" }
     }

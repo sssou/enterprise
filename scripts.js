@@ -73,8 +73,8 @@ const itemData = {
         prev: { href: "evo911.html", text: "2:2 Mansory Porsche 911 P9LM Evo" },
         next: { href: "car.html?item=sequoia4x4", text: "4:4 Toyota Sequoia 4x4" }
     },
-    hycrs8a: {
-        title: "2:2 Audi RS8 Avant",
+    keyhawk: {
+        title: "1:1 Jeep Trackhawk Keyvany",
         prev: { href: "widekit911b.html", text: "1:2 Porsche Brabus Rocket 900R" },
         next: { href: "car.html?item=cayrhc", text: "2:2 Porsche Cayenne 4x4" }
     },

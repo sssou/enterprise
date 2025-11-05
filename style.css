@@ -105,8 +105,8 @@ body {
 
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-auto-rows: 0.5625fr;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows:  repeat(7, 1fr);;
   grid-column-gap: 1vh;
   grid-row-gap: 1vh;
   height: 100vh;
@@ -114,18 +114,15 @@ body {
 }
 
 
-.cayrhc { grid-area: 4 / 1 / 7 / 3; }
-.r8yeti { grid-area: 3 / 6 / 7 / 9; }
-.kcsq8 { grid-area: 4 / 4 / 7 / 6; }
-.mansm8 { grid-area: 4 / 3 / 6 / 4; }
-.vanztrackhawk { grid-area: 6 / 3 / 7 / 4; }
-.rx7kyza { grid-area: 1 / 1 / 4 / 4; }
-.golf4x4 { grid-area: 1 / 4 / 3 / 6; }
-.w223mansory { grid-area: 1 / 7 / 3 / 9; }
-.widekit911b { grid-area: 1 / 6 / 2 / 7; }
-.evo911 { grid-area: 2 / 6 / 3 / 7; }
-.keyhawk { grid-area: 3 / 5 / 4 / 6; }
-.zzz { grid-area: 3 / 4 / 4 / 5; }
+.r8yeti { grid-area: 4 / 4 / 8 / 8; }
+.widekit911b { grid-area: 5 / 1 / 8 / 4; }
+.evo911 { grid-area: 1 / 5 / 4 / 8; }
+.kcsq8 { grid-area: 1 / 1 / 3 / 3; }
+.golf4x4 { grid-area: 2 / 3 / 4 / 5; }
+.cayrhc { grid-area: 3 / 1 / 5 / 3; }
+.w223mansory { grid-area: 1 / 3 / 2 / 4; }
+.rx7kyza { grid-area: 1 / 4 / 2 / 5; }
+.keyhawk { grid-area: 4 / 3 / 5 / 4; }
 
 /* Ensure each item avoids breaking across columns */
 .image-item {

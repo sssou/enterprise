@@ -118,11 +118,11 @@ body {
 .widekit911b { grid-area: 5 / 1 / 8 / 4; }
 .evo911 { grid-area: 1 / 5 / 4 / 8; }
 .kcsq8 { grid-area: 1 / 1 / 3 / 3; }
-.golf4x4 { grid-area: 2 / 3 / 4 / 5; }
+.keyhawk { grid-area: 2 / 3 / 4 / 5; }
 .cayrhc { grid-area: 3 / 1 / 5 / 3; }
 .w223mansory { grid-area: 1 / 3 / 2 / 4; }
 .rx7kyza { grid-area: 1 / 4 / 2 / 5; }
-.keyhawk { grid-area: 4 / 3 / 5 / 4; }
+.thumbnail { grid-area: 4 / 3 / 5 / 4; }
 
 /* Ensure each item avoids breaking across columns */
 .image-item {

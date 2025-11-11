@@ -170,12 +170,12 @@ body {
 }
 
 /* Responsive adjustments */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .image-grid {
     
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(55, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
     grid-column-gap: 1vw;
     grid-row-gap: 1vw;
     height: 100vh;
@@ -185,31 +185,16 @@ body {
   .image-item img {
     border: 1px solid #000;
   }
-  
-  .widekit911b { grid-area: 1 / 1 / 5 / 5; }
-  .mansm8 { grid-area: 1 / 5 / 7 / 11; }
-  .w223mansory { grid-area: 5 / 1 / 9 / 5; }
-  .rx7kyza { grid-area: 35 / 2 / 41 / 10; }
-  .golf4x4 { grid-area: 41 / 1 / 45 / 5; }
-  .puroswb { grid-area: 41 / 7 / 45 / 11; }
-  .zzz { grid-area: 13 / 2 / 21 / 10; }
-  .rs6 { grid-area: 45 / 1 / 55 / 11; }
-  .evo911 { grid-area: 25 / 1 / 31 / 7; }
-  .r8yeti { grid-area: 9 / 1 / 13 / 5; }
-  .keyhawk { grid-area: 31 / 1 / 35 / 5; }
-  .cayrhc { grid-area: 31 / 5 / 35 / 9; }
-  .s63w223mansory { grid-area: 25 / 7 / 29 / 11; }
-  .phawk { grid-area: 21 / 2 / 25 / 6; }
-  .gt3mantle { grid-area: 21 / 6 / 25 / 10; }
-  .kcsq8 { grid-area: 7 / 5 / 13 / 11; }
-  .evil { grid-area: 29 / 9 / 35 / 11; }
-  .vanztrackhawk { grid-area: 41 / 5 / 45 / 7; }
-  .nfs { grid-area: 29 / 7 / 31 / 9; }
-
-  .zzz img {
-    object-position: 50% 50%;
+  .r8yeti { grid-area: 1 / 1 / 2 / 2; }
+  .keyhawk { grid-area: 2 / 1 / 3 / 2; }
+  .evo911 { grid-area: 3 / 1 / 4 / 2; }
+  .widekit911b { grid-area: 4 / 1 / 5 / 2; }
+  .cayrhc { grid-area: 5 / 1 / 6 / 2; }
+  .kcsq8 { grid-area: 6 / 1 / 7 / 2; }
+  .w223mansory { grid-area: 7 / 1 / 8 / 2; }
+  .rx7kyza { grid-area: 8 / 1 / 9 / 2; }
+  .thumbnail { grid-area: 9 / 1 / 10 / 2; }
   }
-}
 
 /* dark mode experiment */
 :root {

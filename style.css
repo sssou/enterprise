@@ -105,8 +105,7 @@ body {
 
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows:  repeat(7, 1fr);;
+  grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 1vh;
   grid-row-gap: 1vh;
   height: 100vh;
@@ -114,15 +113,7 @@ body {
 }
 
 
-.r8yeti { grid-area: 4 / 4 / 8 / 8; }
-.widekit911b { grid-area: 5 / 1 / 8 / 4; }
-.evo911 { grid-area: 1 / 5 / 4 / 8; }
-.kcsq8 { grid-area: 1 / 1 / 3 / 3; }
-.keyhawk { grid-area: 2 / 3 / 4 / 5; }
-.cayrhc { grid-area: 3 / 1 / 5 / 3; }
-.w223mansory { grid-area: 1 / 3 / 2 / 4; }
-.rx7kyza { grid-area: 1 / 4 / 2 / 5; }
-.thumbnail { grid-area: 4 / 3 / 5 / 4; }
+
 
 /* Ensure each item avoids breaking across columns */
 .image-item {
@@ -185,15 +176,7 @@ body {
   .image-item img {
     border: 1px solid #000;
   }
-  .r8yeti { grid-area: 1 / 1 / 2 / 2; }
-  .keyhawk { grid-area: 2 / 1 / 3 / 2; }
-  .evo911 { grid-area: 3 / 1 / 4 / 2; }
-  .widekit911b { grid-area: 4 / 1 / 5 / 2; }
-  .cayrhc { grid-area: 5 / 1 / 6 / 2; }
-  .kcsq8 { grid-area: 6 / 1 / 7 / 2; }
-  .w223mansory { grid-area: 7 / 1 / 8 / 2; }
-  .rx7kyza { grid-area: 8 / 1 / 9 / 2; }
-  .thumbnail { grid-area: 9 / 1 / 10 / 2; }
+
   }
 
 /* dark mode experiment */
